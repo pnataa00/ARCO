@@ -16,7 +16,7 @@ void Alumno::setNota(int nota) {
 
 // Metodo para devolver notas
 int Alumno::getNota(int pos) {
-    return notas[pos];
+    return notas.at(pos);
 }
 
 // Metodo que devuelve el número de notas
