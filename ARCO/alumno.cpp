@@ -1,13 +1,14 @@
-// Autor : Javier Prádanos 
+/* Autor : Javier Prádanos
+ *
+ * Esta basado en las opciones 1 y 2 pero no copiado integramente
+ *
+ */
 
 #include "alumno.h"
 
 // Constructor con parámetros
 Alumno::Alumno(std::string nombre, std::string apellidos, std::string dni) : Persona (nombre, apellidos, dni) {
 }
-
-// Constructor vacio
-Alumno:Alumno();
 
 // Metodo para insertar notas
 void Alumno::setNota(int nota) {
@@ -25,10 +26,10 @@ int Alumno::getNumNotas() {
 }
 
 // Metodo que devuelve la nota media
-int Alumno::getNotaMedia() {
+float Alumno::getNotaMedia() {
     int i, sum = 0;
     for(i = 0; i < getNumNotas(); i++) {
-    	sum = sum + getNota(i);
+        sum = sum + getNota(i);
     }
     return sum / getNumNotas();
 }
