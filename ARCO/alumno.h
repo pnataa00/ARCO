@@ -12,13 +12,13 @@
 class Alumno : public Persona {
     public:
         // Constructor con parámetros
-        Alumno(std::string n, std::string a, std::string dni);
+        Alumno(std::string nombre, std::string apellidos, std::string dni);
 
         // Constructor vacio
         Alumno();
 
         // Metodo para insertar notas
-        void setNota(int nota);
+        void setNota(float notaAlumno);
 
         // Metodo para devolver notas
         int getNota(int pos);
@@ -26,9 +26,6 @@ class Alumno : public Persona {
         // Metodo que devuelve el número de notas
         int getNumNotas();
 
-        // Metodo que devuelve la nota media
-        float getNotaMedia();
-    private:
-        std::vector<int> notas;
+        std::vector<int>notas;
 };
 #endif

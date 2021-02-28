@@ -2,13 +2,13 @@
 #define PERSONA_H
 #include <string>
 
-class persona{
+class Persona{
     private:
         std::string nombre,apellidos,dni;
         
     public:
-    persona();
-    persona(std::string nombre,std::string apellidos,std::string dni);
+    Persona();
+    Persona(std::string nombre,std::string apellidos,std::string dni);
     void setNombre(std::string nombre);
 	void setApellidos(std::string apellido);
 	void setDni(std::string dni);

@@ -11,8 +11,8 @@ Alumno::Alumno(std::string nombre, std::string apellidos, std::string dni) : Per
 }
 
 // Metodo para insertar notas
-void Alumno::setNota(int nota) {
-    notas.push_back(nota);
+void Alumno::setNota(float notaAlumno) {
+    notas.push_back(notaAlumno);
 }
 
 // Metodo para devolver notas
@@ -25,11 +25,3 @@ int Alumno::getNumNotas() {
     return notas.size();
 }
 
-// Metodo que devuelve la nota media
-float Alumno::getNotaMedia() {
-    int i, sum = 0;
-    for(i = 0; i < getNumNotas(); i++) {
-        sum = sum + getNota(i);
-    }
-    return sum / getNumNotas();
-}

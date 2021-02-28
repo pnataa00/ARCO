@@ -1,33 +1,34 @@
 #include "persona.h"
-persona::persona(){
+Persona::Persona(){
 
 }
-persona::persona(std::string _nombre,std::string _apellidos,std::string _dni){
-	nombre=_nombre;
-	apellidos=_apellidos;
-	dni=_dni;
+Persona::Persona(std::string nombre,std::string apellidos,std::string dni){
+	nombre=nombre;
+	apellidos=apellidos;
+	dni=dni;
     }
-std::string persona :: getNombre()
+std::string Persona :: getNombre()
 {
     return nombre;
 }
-void persona :: setNombre(std::string _nombre)
+void Persona :: setNombre(std::string nombre)
 {
-    nombre = _nombre;
+    nombre = nombre;
 }
-std::string persona :: getApellidos()
+std::string Persona :: getApellidos()
 {
     return apellidos;
 }
-void persona :: setApellidos(std::string _apellidos)
+void Persona :: setApellidos(std::string apellidos)
 {
-    apellidos = _apellidos;
+    apellidos = apellidos;
 }
-std::string persona :: getDni()
+std::string Persona :: getDni()
 {
     return dni;
 }
-void persona :: setDni(std::string _dni)
+void Persona :: setDni(std::string dni)
 {
-   dni= _dni;
+
+   dni= dni;
 }
