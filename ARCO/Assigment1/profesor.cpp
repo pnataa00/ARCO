@@ -29,17 +29,12 @@ void Profesor::asignarNotas(int index, float notaAlumno, float notaAlumno2, floa
 }
 
 float Profesor::notaMedia(int index){
-
-    if(listaAlumnos[index].notas.size()==1){
-            return listaAlumnos[index].notas.at(0);
-        }else if(listaAlumnos[index].notas.size()==2){
-            return (listaAlumnos[index].notas.at(0)+listaAlumnos[index].notas.at(1))/2;
-        }else if(listaAlumnos[index].notas.size()==3){
-            return (listaAlumnos[index].notas.at(0)+listaAlumnos[index].notas.at(1)+listaAlumnos[index].notas.at(2))/3;
-        }else{
-            return 0;
-        }
-    }
+	int i, sum = 0;
+	for(i = 0; i < listaAlumnos[index].getNumNotas(); i++){
+		sum = sum + listaAlumnos[index].getNota(i);	
+	}
+	return sum/listaAlumnos[index].getNumNotas();	
+}
 
 //Metodo que imprime el listado de alumnos con sus datos y sus notas medias
 //El formato de los cout referenciado de una practica de años pasados 
@@ -63,7 +58,7 @@ void Profesor::imprimirMejorNota(){
         int mejorNota = 0;
         int i;
         for(i=0; i<listaAlumnos.size(); i++){
-            if(listaAlumnos[i].notas.size()==3){
+            if(listaAlumnos[i].getNumNotas()==3){
                 if(notaMedia(i)>mejorNota){
                     mejorNota = notaMedia(i);
                     nombre = listaAlumnos[i].getNombre();
@@ -79,6 +74,6 @@ void Profesor::imprimirMejorNota(){
         std::cout << dni << std::endl;
         std::cout << "Nota media: " << mejorNota << std::endl;
     }
-int Profesor::notaAlumno(int a, int n){
-	return listaAlumnos[a].notas[n];
+float Profesor::notaAlumno(int a, int n){
+	return listaAlumnos[a].getNota(n);
 }

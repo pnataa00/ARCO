@@ -10,9 +10,7 @@
 #include <vector>
 
 class Alumno : public Persona {
-    public:
-  	std::vector<int>notas;
-  	
+    public:	
   	std::string nombre;
   	std::string apellidos;
   	std::string dni;
@@ -27,11 +25,11 @@ class Alumno : public Persona {
         void setNota(float notaAlumno);
 
         // Metodo para devolver notas
-        int getNota(int pos);
+        float getNota(int pos);
 
         // Metodo que devuelve el número de notas
         int getNumNotas();
-
-        
+    private:
+      	std::vector<int>notas;    
 };
 #endif

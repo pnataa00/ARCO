@@ -16,7 +16,7 @@ void Alumno::setNota(float notaAlumno) {
 }
 
 // Metodo para devolver notas
-int Alumno::getNota(int pos) {
+float Alumno::getNota(int pos) {
     return notas[pos];
 }
 

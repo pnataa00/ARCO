@@ -25,6 +25,6 @@ class Profesor : public Persona {
         float notaMedia (int index);
         void imprimirListaAlumnos();
         void imprimirMejorNota();
-        int notaAlumno(int a, int n);
+        float notaAlumno(int a, int n);
 };
 #endif 

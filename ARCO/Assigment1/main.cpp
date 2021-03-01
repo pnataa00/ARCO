@@ -114,7 +114,7 @@ void Calificando() {
                         std::cout << profesores[i].listaAlumnos[j].getDni() << "\n";
                         std::cout << "Notas: ";
                         int k;
-                        for(k=0; k<profesores[i].listaAlumnos[j].notas.size(); k++){
+                        for(k=0; k<profesores[i].listaAlumnos[j].getNumNotas(); k++){
                             std::cout << profesores[i].notaAlumno(j, k) << " ";
                         }
                         std::cout << "\nMedia: " << profesores[i].notaMedia(j) << "\n";
