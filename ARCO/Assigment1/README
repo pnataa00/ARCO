@@ -1,0 +1,18 @@
+ASSIGMENT 1 - AC
+
+GROUP MEMBERS:
+- Diego Machado
+- Arturo Izquierdo
+- Miguel Martin
+- Javier Prádanos
+- Pablo Natal
+
+INSTRUCTIONS TO FOLLOW:
+
+ - 1. YOU MUST BE IN THE SAME DIRECTORY OF THIS README FILE.
+ 
+ - 2. COMPILE ALL FILES USING THE NEXT COMMAND:
+ 	g++ -o main *.cpp
+ 	
+ - 3. EXECUTE THE MAIN FILE USING THE NEXT COMMAND:
+	./main
